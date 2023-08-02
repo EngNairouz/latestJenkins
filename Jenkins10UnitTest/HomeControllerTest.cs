@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 using System.Linq;
 using Xunit;
 using System.IO;
-//using Microsoft.AspNetCore.Mvc;
-//using Jenkins10.Controllers;
+using Microsoft.AspNetCore.Mvc;
+using Jenkins10.Controllers;
 
 
 namespace Jenkins10UnitTest
@@ -20,9 +20,9 @@ namespace Jenkins10UnitTest
         public void Test_Index_ReturnsViewName()
         {
 
-       //     var homeController = new HomeController();
-       //     var result = homeController.Index() as ViewResult;
-           // Assert.Equal("I", result?.ViewName);
+            var homeController = new HomeController();
+            var result = homeController.Index() as ViewResult;
+            Assert.Equal("Index", result?.ViewName);
 
         }
     }
