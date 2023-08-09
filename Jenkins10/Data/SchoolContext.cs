@@ -23,13 +23,13 @@ namespace Jenkins10.Data
             modelBuilder.Entity<Enrollment>().ToTable("Enrollment");
             modelBuilder.Entity<Student>().ToTable("Student");
             modelBuilder.Entity<Course>().HasData(
-            new Course { CourseID = 1050, Title = "Chemistry", Credits = 3 },
-            new Course { CourseID = 4022, Title = "Microeconomics", Credits = 3 },
-            new Course { CourseID = 4041, Title = "Macroeconomics", Credits = 3 },
-            new Course { CourseID = 1045, Title = "Calculus", Credits = 4 },
-            new Course { CourseID = 3141, Title = "Trigonometry", Credits = 4 },
-            new Course { CourseID = 2021, Title = "Composition", Credits = 3 },
-            new Course { CourseID = 2042, Title = "Literature", Credits = 4 });
+            new Course { CourseID = 1050, Title = "Chemistry", Credits = 3, Description = "Test1" },
+            new Course { CourseID = 4022, Title = "Microeconomics", Credits = 3, Description = "Test2" },
+            new Course { CourseID = 4041, Title = "Macroeconomics", Credits = 3, Description = "Test3" },
+            new Course { CourseID = 1045, Title = "Calculus", Credits = 4, Description = "Test4" },
+            new Course { CourseID = 3141, Title = "Trigonometry", Credits = 4, Description = "Test5" },
+            new Course { CourseID = 2021, Title = "Composition", Credits = 3, Description = "Test6" },
+            new Course { CourseID = 2042, Title = "Literature", Credits = 4, Description = "Test7" });
 
 
         }
