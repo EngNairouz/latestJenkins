@@ -20,6 +20,9 @@
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">C:\Users\nmahmoud\.nuget\packages\xunit.analyzers\1.0.0</Pkgxunit_analyzers>
+    <PkgMessagePackAnalyzer Condition=" '$(PkgMessagePackAnalyzer)' == '' ">C:\Users\nmahmoud\.nuget\packages\messagepackanalyzer\2.1.152</PkgMessagePackAnalyzer>
+    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\nmahmoud\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2</PkgMicrosoft_CodeAnalysis_Analyzers>
+    <PkgMicrosoft_CodeAnalysis_AnalyzerUtilities Condition=" '$(PkgMicrosoft_CodeAnalysis_AnalyzerUtilities)' == '' ">C:\Users\nmahmoud\.nuget\packages\microsoft.codeanalysis.analyzerutilities\3.3.0</PkgMicrosoft_CodeAnalysis_AnalyzerUtilities>
     <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\nmahmoud\.nuget\packages\microsoft.entityframeworkcore.tools\6.0.14</PkgMicrosoft_EntityFrameworkCore_Tools>
   </PropertyGroup>
 </Project>

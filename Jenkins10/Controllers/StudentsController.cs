@@ -17,10 +17,11 @@ namespace Jenkins10.Controllers
 
 
         // GET: StudentsController
+    
+
         public async Task<IActionResult> Index()
         {
-            // var students = await _context.Students.ToListAsync();
-            var students = getAllStudents();
+            var students = await getAllStudents(); // Await the asynchronous method
             return View(students);
         }
         public async Task<List<Jenkins10.Models.Student>> getAllStudents()
