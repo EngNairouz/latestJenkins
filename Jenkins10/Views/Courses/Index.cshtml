@@ -1,11 +1,23 @@
 ﻿@model IEnumerable<Jenkins10.Models.Course>
+<style>
+    table,
+    td,
+    th {
+        border: 1px solid;
+        padding: 20px;
+    }
 
+    table {
+        text-align: center;
+    }
+</style>
 <!-- Your HTML content here to display the list of students -->
 <table>
     <tr>
-        <th>
+        <th style="text-align:center">
             @Html.DisplayNameFor(model => model.CourseID)
         </th>
+      
         <th>
             @Html.DisplayNameFor(model => model.Credits)
         </th>
@@ -16,18 +28,15 @@
     @foreach (var item in Model)
     {
         <tr>
+            
             <td>
                 @Html.DisplayFor(modelItem => item.CourseID)
             </td>
+          
             <td>
                 @Html.DisplayFor(modelItem => item.Credits)
             </td>
-           
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.CourseID }) |
-                @Html.ActionLink("Details", "Details", new { id=item.CourseID }) |
-                @Html.ActionLink("Delete", "Delete", new { id=item.CourseID })
-            </td>
+         
         </tr>
     }
 
